@@ -1,4 +1,6 @@
 import os
+from flask import Flask
+
 
 class PingValidation:
     """
@@ -6,4 +8,3 @@ class PingValidation:
     """
     def myfunc(self):
         print ("hello {}".format("La mera vena"))
-
