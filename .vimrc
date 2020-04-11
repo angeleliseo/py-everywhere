@@ -33,7 +33,7 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
-
+":PluginInstall
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
