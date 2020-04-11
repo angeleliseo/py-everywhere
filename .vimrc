@@ -66,3 +66,12 @@ let g:syntastic_check_on_wr = 1
 set nu
 set clipboard=unnamed
 
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
