@@ -5,8 +5,7 @@ RUN mkdir /home/app
 RUN pip install --no-cache-dir -r requirements.txt
 RUN git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 COPY .vimrc /root/
-#RUN echo | echo | vim +PluginInstall +qall &>/dev/null
-#RUN cd ~/.vim/bundle/YouCompleteMe
-#RUN python3 install.py
+COPY entry.sh /root/
+#WORKDIR /home/app
+ENTRYPOINT ["sh", "/root/entry.sh"]
 WORKDIR /home/app
-
