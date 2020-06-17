@@ -7,4 +7,4 @@ class PingValidation:
     my class doc string
     """
     def myfunc(self):
-        print ("hello {}".format("La mera vena"))
+        print ("hello {}".format("world"))
